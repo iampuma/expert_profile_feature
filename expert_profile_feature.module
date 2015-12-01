@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the expert_profile_feature feature.
+ */
+
+include_once 'expert_profile_feature.features.inc';

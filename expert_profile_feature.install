@@ -1,0 +1,41 @@
+<?php
+/**
+ * @file
+ * Contains all installations hooks for expert_profile_feature.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function expert_profile_feature_install() {
+  $modules = array(
+    'toolbar',
+    'overlay',
+    'dashboard',
+    'comment',
+    'bartik',
+    'seven'
+  );
+
+  foreach ($modules as $module) {
+    if( module_exists($module)) {
+      module_disable(array($module));
+      drupal_uninstall_modules(array($module));
+    }
+  }
+
+  $enable = array(
+    'theme_default' => 'bootstrap',
+    'admin_theme' => 'adminimal',
+  );
+  theme_enable($enable);
+
+  $enable['node_admin_theme'] = 1;
+  foreach ($enable as $var => $theme) {
+    if (!is_numeric($var)) {
+      variable_set($var, $theme);
+    }
+  }
+
+  theme_disable(array('bartik', 'seven'));
+}
