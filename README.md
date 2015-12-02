@@ -9,7 +9,7 @@ This is a profile feature which contains configuration for starting a new Drupal
 
 ##### Usage
 
-1. Copy the profile's [make file](https://github.com/iampuma/expert_profile/blob/master/expert.make) to a directory
+1. Copy the profile's [make file](https://github.com/iampuma/expert_profile/blob/master/expert.make) your site's directory
 2. Run ``drush make expert.make``
 3. Run ``drush si expert_profile -y --account-name=admin --account-pass=admin --db-url=mysql://MYDB:MYPASS@localhost/DBNAME --site-name="Expert"``
 
