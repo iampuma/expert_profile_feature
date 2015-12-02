@@ -7,7 +7,7 @@ This is a profile feature which contains configuration for starting a new Drupal
 - This can be used in combination with a Drupal 7 [profile](https://github.com/iampuma/expert_profile)
 - Use the profile's [make file](https://github.com/iampuma/expert_profile/blob/master/expert.make) to start the Drupal build
 
-##### Installation
+##### Usage
 
 1. Copy the profile's [make file](https://github.com/iampuma/expert_profile/blob/master/expert.make) to a directory
 2. Run ``drush make expert.make``
@@ -16,3 +16,5 @@ This is a profile feature which contains configuration for starting a new Drupal
 ###### OR
 
 1. Try out [Drupal Vagrant](https://github.com/iampuma/drop) and run ``site=d7profile vagrant up``
+
+#### Contents
