@@ -330,6 +330,15 @@ function expert_profile_feature_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: 'administer google analytics'.
+  $permissions['administer google analytics'] = array(
+    'name' => 'administer google analytics',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'googleanalytics',
+  );
+
   // Exported permission: 'administer honeypot'.
   $permissions['administer honeypot'] = array(
     'name' => 'administer honeypot',
@@ -883,6 +892,15 @@ function expert_profile_feature_user_default_permissions() {
     'module' => 'pathauto',
   );
 
+  // Exported permission: 'opt-in or out of tracking'.
+  $permissions['opt-in or out of tracking'] = array(
+    'name' => 'opt-in or out of tracking',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'googleanalytics',
+  );
+
   // Exported permission: 'perform backup'.
   $permissions['perform backup'] = array(
     'name' => 'perform backup',
@@ -996,6 +1014,15 @@ function expert_profile_feature_user_default_permissions() {
       'editor' => 'editor',
     ),
     'module' => 'i18n_string',
+  );
+
+  // Exported permission: 'use PHP for tracking visibility'.
+  $permissions['use PHP for tracking visibility'] = array(
+    'name' => 'use PHP for tracking visibility',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'googleanalytics',
   );
 
   // Exported permission: 'use advanced search'.
